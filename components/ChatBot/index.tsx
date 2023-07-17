@@ -3,8 +3,11 @@ import React, { useEffect } from 'react';
 const Chatbot = () => {
   useEffect(() => {
     // Chatbot code
-    window.__be = window.__be || {};
-    window.__be.id = "64b508e6ebb51c00076dbe42";
+    window.__be = {
+      ...(window.__be || {}),
+      id: "64b508e6ebb51c00076dbe42",
+    };
+
     (function () {
       var be = document.createElement('script');
       be.type = 'text/javascript';
