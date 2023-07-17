@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Chatbot from "../ChatBot";
 
 const Footer = () => {
   return (
@@ -392,6 +393,8 @@ const Footer = () => {
             </defs>
           </svg>
         </div>
+
+        <Chatbot />
 
       </footer>
     </>
